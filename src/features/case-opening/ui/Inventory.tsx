@@ -15,6 +15,7 @@ export const Inventory = () => {
                         <img src={item.image} alt={item.name} style={{ width: '100%', height: 60, objectFit: 'cover' }} />
                         <div style={{ fontSize: 12 }}>{item.name}</div>
                         <div style={{ fontSize: 10, color: '#666' }}>{item.rarity}</div>
+                        <div style={{ fontSize: 10, color: 'green' }}>{item.price}</div>
                     </div>
                 ))}
             </div>
