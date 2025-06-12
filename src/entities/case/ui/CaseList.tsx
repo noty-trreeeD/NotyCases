@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '@/shared'
-import { fetchCases } from '@/entities'
-import { selectCases, selectCasesLoading, selectCasesError } from '@/entities/case'
+import { fetchCases, selectCases, selectCasesLoading, selectCasesError } from '@/entities'
 import { CaseCard } from './CaseCard'
 
 export const CaseList = () => {

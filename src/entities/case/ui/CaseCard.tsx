@@ -19,6 +19,7 @@ export const CaseCard: React.FC<CaseCardProps> = ({ caseData }) => {
                     </div>
                 ))}
             </div>
+            <p>{caseData.price}</p>
         </div>
     )
 }

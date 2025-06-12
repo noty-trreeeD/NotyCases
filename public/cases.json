@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Fever Case",
+    "price": 0,
     "loot": [
       {
         "id": "sure-grip",
@@ -117,6 +118,7 @@
   {
     "id": 2,
     "name": "Dreams & Nightmares Case",
+    "price": 0,
     "loot": [
       {
         "id": "liftedSpirits",
@@ -232,6 +234,7 @@
   {
     "id": 3,
     "name": "Kilowatt case",
+    "price": 100,
     "loot": [
       {
         "id": "milSpec1",
@@ -346,6 +349,7 @@
   },
   {
     "id": 4,
+    "price": 400,
     "name": "Gallery case",
     "loot": [
       {
@@ -461,6 +465,7 @@
   },
   {
     "id": 5,
+    "price": 1000,
     "name": "Operation Bravo Case",
     "loot": [
       {
@@ -565,6 +570,7 @@
   {
     "id": 6,
     "name": "CS:GO Weapon Case",
+    "price": 4000,
     "loot": [
       {
         "id": "milSpec1",

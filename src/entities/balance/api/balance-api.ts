@@ -1,19 +1,27 @@
-import type { Balance } from '@/shared/types'
+import type { User } from '@/shared'
 
 const BALANCE_KEY = 'user_balance'
 
-export function getBalanceFromStorage(): Balance {
+export function getBalanceFromStorage(): User {
     const stored = localStorage.getItem(BALANCE_KEY)
     if (stored) {
         try {
-            return JSON.parse(stored) as Balance
+            return JSON.parse(stored) as User
         } catch {
-            return { amount: 0 }
+            return {
+                id: '',
+                username: '',
+                balance: 0,
+            }
         }
     }
-    return { amount: 0 }
+    return {
+        id: '',
+        username: '',
+        balance: 0,
+    }
 }
 
-export function saveBalanceToStorage(balance: Balance) {
-    localStorage.setItem(BALANCE_KEY, JSON.stringify(balance))
+export function saveBalanceToStorage(user: User) {
+    localStorage.setItem(BALANCE_KEY, JSON.stringify(user))
 }

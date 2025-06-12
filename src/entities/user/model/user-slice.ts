@@ -1,10 +1,10 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
-import type { UserState } from './user-types'
+import {loadUser, type UserState } from '@/entities'
 import type { User } from '@/shared'
-import { loadUser } from '../api/user-api'
 
 const initialState: UserState = {
     user: loadUser(),
+    balance: 0
 }
 
 const userSlice = createSlice({

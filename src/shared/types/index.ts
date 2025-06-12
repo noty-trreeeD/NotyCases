@@ -21,6 +21,7 @@ export interface Case {
     name: string
     loot: Skin[]
     imageUrl: string
+    price: number | 0
 }
 
 export interface ApiResponse<T> {
@@ -30,12 +31,8 @@ export interface ApiResponse<T> {
 }
 
 export interface User {
-    balance: number
     id: string | number
     username: string
     avatarUrl?: string
-}
-
-export interface Balance {
-    amount: number
+    balance: number
 }

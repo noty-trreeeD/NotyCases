@@ -1,16 +1,22 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
-import { fileURLToPath } from 'url'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
-})
+  optimizeDeps: {
+    include: ['react-is', 'prop-types', '@emotion/react', '@emotion/styled'],
+    exclude: ['@mui/material', '@mui/system', '@mui/styled-engine'],
+  },
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+      include: [/node_modules/, 'react-is', 'prop-types', '@emotion/react', '@emotion/styled'],
+    },
+  },
+});

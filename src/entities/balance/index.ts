@@ -1,7 +1,18 @@
-export { balanceReducer } from './model/balance-slice'
-export { setBalance, addBalance, subtractBalance } from './model/balance-slice'
+export {
+    balanceReducer,
+    setBalance,
+    addBalance,
+    subtractBalance
+} from './model/balance-slice'
+
+export {
+    getBalanceFromStorage,
+    saveBalanceToStorage
+} from './api/balance-api'
+
 export {
     selectBalanceAmount,
     selectBalanceLoading,
     selectBalanceError,
+    selectCurrentUser
 } from './model/balance-selectors'

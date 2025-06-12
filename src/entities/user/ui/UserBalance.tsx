@@ -1,5 +1,5 @@
 import { useAppSelector } from '@/shared'
-import { selectUser } from '@/entities/user'
+import { selectUser } from '@/entities'
 
 export const UserBalance = () => {
     const user = useAppSelector(selectUser)
