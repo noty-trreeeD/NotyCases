@@ -18,8 +18,7 @@ export const CaseCard: FC<CaseCardProps> = ({ caseData }) => {
         <div className={styles.caseCard}>
             <h3 className={styles.caseCardTitle}>{caseData.name}</h3>
             <img className={styles.caseCardImage} src={caseData.image} alt={caseData.name}/>
-            <p className={styles.caseCardPrice}>Цена: {caseData.price}</p>
-            <button onClick={handleOpen}>Открыть кейс</button>
+            <button onClick={handleOpen}><span className={styles.caseCardPrice}>{caseData.price}$</span></button>
         </div>
     )
 }
