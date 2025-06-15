@@ -1,0 +1,65 @@
+.caseCard {
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #3a3a3a, #2e2e2e);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #f1791d;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px);
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  &-image {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
+
+  &-price {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: auto;
+    color: #ffffffcc;
+  }
+
+  & button {
+    margin-top: 16px;
+    width: 100%;
+    height: 44px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f1791d;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ff933a;
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}

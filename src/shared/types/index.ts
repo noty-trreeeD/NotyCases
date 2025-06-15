@@ -20,7 +20,7 @@ export interface Case {
     id: ID
     name: string
     loot: Skin[]
-    imageUrl: string
+    image: string
     price: number | 0
 }
 

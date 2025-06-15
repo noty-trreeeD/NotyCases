@@ -1,5 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import {caseReducer, userReducer, dropResultReducer, inventoryReducer, balanceReducer} from '@/entities'
+import { userReducer } from '@/entities'
+import { balanceReducer, caseReducer } from "@/features";
+import { dropResultReducer, inventoryReducer} from '@/widgets';
 
 export const store = configureStore({
     reducer: {

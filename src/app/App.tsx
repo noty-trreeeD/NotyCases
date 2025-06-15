@@ -1,10 +1,11 @@
-import {CaseOpeningPage} from "@/features/case-opening";
+import { CaseOpeningPage } from "@/pages";
+import {Header} from "@/widgets";
 
 export const App = () => {
     return (
         <div>
+            <Header />
             <CaseOpeningPage />
-            <h1>wasdsad</h1>
         </div>
     )
 }
